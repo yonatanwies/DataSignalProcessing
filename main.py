@@ -1,42 +1,16 @@
 import librosa
 from librosa import display
 import os
-#test
-#Loading audio from system and playing it in notebook
 import IPython.display as ipd
 from IPython.display import Audio
-
-fpath=os.getcwd()
-Audiofile=os.path.join(fpath,'./panic.wav')
-ipd.Audio(Audiofile)
-
-
-#Displaying wave-form of loaded audio file
 import matplotlib.pyplot as plt
-
-data, sr = librosa.load(Audiofile)
-# plt.figure(figsize=(12, 4))
-# librosa.display.waveplot(data, sr=sr)
-#
-# #Before cleaning...
-# #Displaying wave-form of loaded audio file
-# import matplotlib.pyplot as plt
-# original=os.path.join(fpath,'..//compare//original.wav')
-# cleaned=os.path.join(fpath,'..//compare//cleaned.wav')
-# dataOriginal, sr1 = librosa.load(original)
-# dataCleaned,sr2 = librosa.load(cleaned)
-# plt.figure(figsize=(12, 4))
-# librosa.display.waveplot(dataOriginal, sr=sr1)
-#
 
 import time
 import os
 import numpy as np
 
-path = "..\\dataset_files\\RAVDESS\\"
-
+path=os.getcwd()
 lst = []
-
 start_time = time.time()
 
 for subdir, dirs, files in os.walk(path):
