@@ -4,4 +4,4 @@
 
 for i in range(10):
     print(i)
-    print('Yonatan')
+    print('bo ani elamed otcha')
